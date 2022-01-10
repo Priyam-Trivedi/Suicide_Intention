@@ -1,0 +1,60 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style>
+.page-holder {
+  min-height: 100vh;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+body{
+        background-image: url('https://media.gettyimages.com/photos/side-view-of-depressed-woman-covering-face-while-sitting-on-picture-id1144296912?k=6&m=1144296912&s=612x612&w=0&h=_4Sf-CdhOhPbo5UhAgE7PcJ-U1tn-YwO3OkiBsmVrl8=') ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+<!--        max-width: 100%;-->
+        height: auto;
+
+    }
+</style>
+</head>
+
+<!--<div style="background: url(https://media.gettyimages.com/photos/side-view-of-depressed-woman-covering-face-while-sitting-on-picture-id1144296912?k=6&m=1144296912&s=612x612&w=0&h=_4Sf-CdhOhPbo5UhAgE7PcJ-U1tn-YwO3OkiBsmVrl8=)" class="page-holder bg-cover">-->
+<form action="{{ url_for('predict') }}" method="POST">
+  <div class="container py-5">
+    <header class="text-center text-white py-5">
+      <h1 class="display-4 font-weight-bold mb-4"> Classifying Suicidal Intention</h1>
+      <p class="lead mb-4">Write your post here. how your feeling now </p>
+<!--      <p class="font-italic">Snippet By <a href="https://bootstrapious.com" class="text-white">-->
+<!--          <u>Bootstrapious</u></a>-->
+      </p>
+        <div class="form-group"><label for="comment">Comment your Post:</label>
+<!--       <input type ="text" class="form-control"  name="data" rows="4" id="commnt">-->
+          <textarea class="form-control"  name="data" rows="4" id="comment"></textarea>
+        </div>
+        <div class="btn-block">
+          <button type="submit" href="/">Submit</button>
+        </div>
+    </header>
+<!--    <div>-->
+<!--            <center><p >Copyright &copy; Priyam Trivedi 2021 </p></center>-->
+<!--        </div>-->
+
+
+<!--  </div>-->
+</div>
+</form>
+</body>
+</html>
