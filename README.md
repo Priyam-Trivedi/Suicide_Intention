@@ -13,15 +13,19 @@ Main intention of this project is to use this in social media platform(watsapp s
 
 ## Directory Tree 
 ```
-├── static 
-│   ├── css
+
 ├── template
-│   ├── home.html
+│   ├── sucide.html
+│   ├── new_sucide.html
+│   ├── new normal.html
+│   ├── index.html
+│   ├── normal.html
 ├── Procfile
 ├── README.md
-├── app.py
+├── main.py
 ├── flight_price.ipynb
-├── flight_rf.pkl
+├── csv_sucide_Intentom.pkl
+├── TFID_transform.pkl
 ├── requirements.txt
 ```
 
